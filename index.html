@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Trujillo - Digital Art Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            border-bottom: 2px solid #107c10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #107c10;
+            text-shadow: 0 0 10px rgba(0, 188, 242, 0.5);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            background: #107c10;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 188, 242, 0.4);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: radial-gradient(circle at center, rgba(0, 188, 242, 0.1) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #107c10, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cccccc;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #107c10, #0099cc);
+            color: #000000;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 188, 242, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 188, 242, 0.5);
+        }
+
+        .features {
+            padding: 80px 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 188, 242, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #107c10;
+            box-shadow: 0 10px 30px rgba(0, 188, 242, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #107c10;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #107c10;
+        }
+
+        .footer-content {
+            color: #cccccc;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Joseph Trujillo's Portfolio</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="page2.html">Gallery</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to My Digital Art Portfolio</h1>
+                
+                <a href="page2.html" class="cta-button">View Gallery</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px; color: #107c10;">About Me</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <div class="feature-card" style="margin: 0;">
+                        <p style="font-size: 18px; line-height: 1.8; color: #cccccc;">
+                            Hello, I'm Joseph Trujillo, a little about me is that love to play video games, watch wrestling mainly WWE,
+                            watch anime. For most of my life I have been playing on Xbox when I started young in my life like 5, 6, and 7 years 
+                            old. I am now 23 years old and I have an interest in art drawing many things through my life and Digital Art is one
+                            media I am very interested now in my life. I'm enrolled in San Jose State University in my second year transfering
+                            from Merced College expected to graduate from SJSU in Fall 2026.
+                        </p>
+                       
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px; color: #107c10;">Artist Statement</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <div class="feature-card" style="margin: 0;">
+                        <p style="font-size: 18px; line-height: 1.8; color: #cccccc;">
+                            My digital art focuses on gaming, the characters from those games, and my experiences in life.
+                            My work does incoporate a lot of elements from games like Halo, Gears of War, and Call of Duty. Even
+                            other artworks I use other games I play as the main subject when I make an artwork. Photoshop and
+                            Illustrator are my main media that I would use as an artist, but I have dabbled in Photography,
+                            Video, and 3D. When it comes to video games I have a lot to tell to people because it has been with 
+                            me most of my life. What I think that an artist should display in their artworks is their experiences
+                            and what they are passionate about. In my case its video games, I'm passionate about video games and
+                            my love for Xbox. I have widen my scope of what media I can use and it makes an versatile artist.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <p style="color: #107c10; font-weight: bold; margin: 0;">Contact Information</p>
+                    <p style="color: #cccccc; margin: 0;">Email: jittrujillo926@gmail.com</p>
+                    <p style="color: #cccccc; margin: 0;">Phone: (209) 658-1948</p>
+                </div>
+                <img src="Xbox_Logo.jpg" alt="Xbox Logo" style="height: 80px; opacity: 0.9;">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
